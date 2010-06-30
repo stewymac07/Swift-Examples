@@ -7,7 +7,7 @@ package co.uk.mikecann.app.commands
 	{		
 		override public function execute() : void
 		{
-			var circle : RedCircle = entityMap.instantiateEntity(RedCircle) as RedCircle;
+			var circle : RedCircle = entityMap.createEntity(RedCircle) as RedCircle;
 			circle.spatial.position.x = Math.random()*500;
 			circle.spatial.position.y = Math.random()*500;
 		}			

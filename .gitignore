@@ -5,6 +5,13 @@ html-template/*
 bin/*
 doc/*
 obj/*
+.metadata/*
+*/bin-debug/*
+*/html-template/*
+*/libs/*
+Swft/*
+
+
 
 */.svn/*
 .actionScriptProperties

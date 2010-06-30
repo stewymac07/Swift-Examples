@@ -3,6 +3,7 @@ package co.uk.mikecann.app.components
 	import co.uk.mikecann.app.scene.IUpdateable;
 	import co.uk.mikecann.app.scene.Scene;
 	import co.uk.swft.base.EntityComponent;
+	import co.uk.swft.core.IEntity;
 	import co.uk.swft.core.IEntityComponent;
 	
 	import flash.display.Sprite;
@@ -21,6 +22,10 @@ package co.uk.mikecann.app.components
 		protected var _colour : uint = 0;
 		protected var _clicked : Signal = new Signal();
 		
+		//	Private
+		private var _entity:IEntity;
+		
+
 		[PostConstruct]
 		public function init() : void
 		{
@@ -54,5 +59,35 @@ package co.uk.mikecann.app.components
 		public function get colour():uint {	return _colour;	}
 		public function set colour(value:uint):void { _colour = value; }
 		public function get clicked() : Signal { return _clicked; }
+
+	
+		public function set entity(value:IEntity) : void 
+		{
+			_entity = value;
+		}
+		
+		public function get entity() : IEntity
+		{
+			return _entity;
+		}
+		
+		
+		public function onRegister():void
+		{
+			
+			
+		}
+		
+		public function onRemove():void
+		{
+			
+		}
+		
+	
+	
+	
+	
+	
+	
 	}
 }

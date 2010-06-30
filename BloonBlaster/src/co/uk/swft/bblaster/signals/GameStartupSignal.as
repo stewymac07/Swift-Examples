@@ -4,6 +4,7 @@ package co.uk.swft.bblaster.signals
 	
 	import org.osflash.signals.Signal;
 	
+	
 	public class GameStartupSignal extends Signal
 	{
 		public function GameStartupSignal()

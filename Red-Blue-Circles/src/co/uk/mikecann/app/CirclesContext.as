@@ -33,7 +33,7 @@ package co.uk.mikecann.app
 			signalCommandMap.mapSignalClass(SpawnRedCircleSignal, SpawnRedCircleCommand);
 			
 			// Now make a blue circle that follows the mouse about
-			_blueCircle = entityMap.instantiateEntity(BlueCircle) as BlueCircle;
+			_blueCircle = entityMap.createEntity(BlueCircle) as BlueCircle;
 		}
 	}
 }
